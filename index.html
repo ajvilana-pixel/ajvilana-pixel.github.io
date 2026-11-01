@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inecuaciones</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Calculadora de Inecuaciones</h1>
+    <p>Resuelve, aprende y comprueba tus resultados</p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Calculadora matemática</h2>
+
+        <label for="tipo">Tipo de inecuación</label>
+        <select id="tipo">
+            <option value="lineal">Lineal</option>
+            <option value="cuadratica">Cuadrática</option>
+            <option value="racional">Racional</option>
+            <option value="absoluto">Valor absoluto</option>
+        </select>
+
+        <div id="campos"></div>
+
+        <label for="signo">Signo de comparación</label>
+        <select id="signo">
+            <option value=">">Mayor que (&gt;)</option>
+            <option value=">=">Mayor o igual (≥)</option>
+            <option value="<">Menor que (&lt;)</option>
+            <option value="<=">Menor o igual (≤)</option>
+            <option value="=">Igual (=)</option>
+            <option value="!=">Distinto (≠)</option>
+        </select>
+
+        <button id="resolver">Resolver inecuación</button>
+    </section>
+
+    <section class="card">
+        <h2>Resultado</h2>
+        <div id="resultado">Introduce los datos para comenzar.</div>
+    </section>
+
+    <section class="card">
+        <h2>Recta numérica</h2>
+        <canvas id="grafica" width="700" height="140"></canvas>
+    </section>
+
+    <section class="card">
+        <h2>Procedimiento</h2>
+        <ol id="pasos">
+            <li>Selecciona el tipo de inecuación.</li>
+            <li>Introduce los coeficientes.</li>
+            <li>Presiona resolver.</li>
+        </ol>
+    </section>
+
+    <section class="card">
+        <h2>Historial</h2>
+        <ul id="historial"></ul>
+        <button id="limpiar" class="secondary">Limpiar historial</button>
+    </section>
+
+</main>
+
+<footer>
+    INGE DEJEME PASAR =)
+</footer>
+
+<script src="calculadora.js"></script>
+</body>
+</html>
